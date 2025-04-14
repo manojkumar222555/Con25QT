@@ -95,6 +95,12 @@ export class SettingsPage {
     SupplierQuality: "select[name='CertifiedForQualityStatusSelect']",
     Nextbtn7: "button[type='submit']",
     Savechanges_btn: ".new-ven-pro-sve-chgs-btn",
+    Password_Tab: ".tab-label.nav-link[data-rr-ui-event-key='Password']",
+    ChangePassbtn: ".change-password-btn",
+    CancelPass_btn: "button[type='button']",
+    SubmitPass_btn: "button[type='submit']",
+    Pass: "input[name='password']",
+    Confirmpass: "input[name='confirmPassword']",
   };
 
   openurl() {
@@ -525,5 +531,31 @@ export class SettingsPage {
 
   Nextbtn7() {
     cy.get(this.weblocators.Nextbtn7).click();
+  }
+
+  // Password Tab ------------------------------
+
+  ClickonPassword_Tab() {
+    cy.get(this.weblocators.Password_Tab).click();
+  }
+
+  ChangePassbtn() {
+    cy.get(this.weblocators.ChangePassbtn).click({ multiple: true });
+  }
+
+  CancelPass_btn() {
+    cy.get(this.weblocators.CancelPass_btn).click({ multiple: true });
+  }
+
+  SubmitPass_btn() {
+    cy.get(this.weblocators.SubmitPass_btn).click({ multiple: true });
+  }
+
+  enterPassword(Passwd) {
+    cy.get(this.weblocators.Pass).type(Passwd);
+  }
+
+  enterConfirmPass(ConPasswd) {
+    cy.get(this.weblocators.Confirmpass).type(ConPasswd);
   }
 }

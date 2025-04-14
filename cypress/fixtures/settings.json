@@ -41,5 +41,8 @@
   "city_del": "Ambad",
   "zipcode_del": "256236",
   "contactperson_del": "Manoj Kumar",
-  "phonenumber_del": "8000018857"
+  "phonenumber_del": "8000018857",
+
+  "Passwd": "eric2024@gmail.com",
+  "ConPasswd": "Customer@123"
 }

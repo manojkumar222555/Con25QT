@@ -14,6 +14,8 @@ import { TypesPage } from "./Pages2/Types";
 import TypesData from "../fixtures2/Types.json";
 import { SettingsPage } from "./Pages2/Settings";
 import SettingsData from "../fixtures2/Settings.json";
+import { LogoutPage } from "./Pages2/Logout";
+import { DashboardPage } from "./Pages2/Dashboard";
 
 const JobRequestobj = new JobRequestPage();
 const MyQuotationobj = new MyQuotationPage();
@@ -22,6 +24,8 @@ const UserManagementobj = new UserManagementPage();
 const TermsConditionobj = new TermsConditionPage();
 const Typesobj = new TypesPage();
 const Settingsobj = new SettingsPage();
+const Logoutobj = new LogoutPage();
+const Dashboardobj = new DashboardPage();
 
 describe(" Vendor Registration", () => {
   beforeEach(() => {
@@ -176,74 +180,102 @@ describe(" Vendor Registration", () => {
     Settingsobj.clickonDashboard();
     Settingsobj.Settings();
     Settingsobj.Profile();
-    Settingsobj.clickonEditbtn();
-    Settingsobj.enterfirstname();
-    Settingsobj.enterlastname();
-    Settingsobj.enterdepartment();
-    Settingsobj.enterposition();
-    // settingsobj.enteremail();
-    Settingsobj.enterphone();
-    Settingsobj.entermobile();
+    // Settingsobj.clickonEditbtn();
+    // Settingsobj.enterfirstname();
+    // Settingsobj.enterlastname();
+    // Settingsobj.enterdepartment();
+    // Settingsobj.enterposition();
+    // // settingsobj.enteremail();
+    // Settingsobj.enterphone();
+    // Settingsobj.entermobile();
 
-    // Settingsobj.entercountry(SettingsData.country);
-    // Settingsobj.enterstate();
-    // Settingsobj.entercity();
-    Settingsobj.enterstreet();
-    Settingsobj.enterzipcode();
+    // // Settingsobj.entercountry(SettingsData.country);
+    // // Settingsobj.enterstate();
+    // // Settingsobj.entercity();
+    // Settingsobj.enterstreet();
+    // Settingsobj.enterzipcode();
 
-    Settingsobj.clickonSubmitbtn();
-
-    // Settingsobj.typefirstname(SettingsData.firstname);
-    // Settingsobj.typelastname(SettingsData.lastname);
-    // Settingsobj.typedepartment(SettingsData.department);
-    // Settingsobj.typeposition(SettingsData.Position);
-    // Settingsobj.typephone(SettingsData.phone);
-    // Settingsobj.typemobile(SettingsData.mobile);
-
-    // Settingsobj.typecountry(SettingsData.country);
-    // Settingsobj.typestate(SettingsData.state);
-    // // Settingsobj.typecity(SettingsData.city);
-    // Settingsobj.typeStreet(SettingsData.Street);
-    // Settingsobj.typezipcode(SettingsData.zipcode);
     // Settingsobj.clickonSubmitbtn();
-    Settingsobj.Cancel_btn();
 
-    // Organization Page -------------------------------------------------
-    Settingsobj.Organization_tab();
-    Settingsobj.EditOrg_btn();
-    Settingsobj.ClickonRegistered_Country();
-    Settingsobj.ClickonVendor_Type();
-    Settingsobj.ClickonCompany_Type();
-    Settingsobj.ClickonAuthorized_Capital();
-    Settingsobj.ClickonEstablished_Date();
-    // Settingsobj.ClickonUsername();
-    // Settingsobj.ClickonPassword();
-    // Settingsobj.ClickonConfirm_Password();
-    Settingsobj.ClickonCompany_Name();
-    Settingsobj.ClickonWebsite();
-    Settingsobj.ClickonPhone_Number();
-    Settingsobj.ClickonMobile_Number();
-    Settingsobj.ClickonAddress_Line1();
-    Settingsobj.ClickonAddress_Line2();
-    Settingsobj.ClickonState();
-    Settingsobj.ClickonCity();
-    Settingsobj.ClickonPostal_Code();
-    Settingsobj.nextbtn1();
+    // // Settingsobj.typefirstname(SettingsData.firstname);
+    // // Settingsobj.typelastname(SettingsData.lastname);
+    // // Settingsobj.typedepartment(SettingsData.department);
+    // // Settingsobj.typeposition(SettingsData.Position);
+    // // Settingsobj.typephone(SettingsData.phone);
+    // // Settingsobj.typemobile(SettingsData.mobile);
 
-    Settingsobj.EnterRegistered_Country(SettingsData.Registeredcountry);
-    Settingsobj.EnterVendor_Type(SettingsData.vendorType);
-    Settingsobj.EnterCompany_Type(SettingsData.companyType);
-    Settingsobj.EnterAuthorized_Capital(SettingsData.capital);
-    Settingsobj.EnterEstablished_Date(SettingsData.Date);
-    Settingsobj.EnterCompany_Name(SettingsData.companyname1);
-    Settingsobj.EnterWebsite(SettingsData.website);
-    Settingsobj.EnterPhone_Number(SettingsData.phonenumber1);
-    Settingsobj.EnterMobile_Number(SettingsData.mobilenumber1);
-    Settingsobj.EnterAddress_Line1(SettingsData.addr1);
-    Settingsobj.EnterAddress_Line2(SettingsData.addr2);
-    // Settingsobj.EnterState(SettingsData.orgstate);
-    // Settingsobj.EnterCity(SettingsData.orgcity);
-    Settingsobj.EnterPostal_Code(SettingsData.postalcode);
-    Settingsobj.clickonSavechanges_btn();
+    // // Settingsobj.typecountry(SettingsData.country);
+    // // Settingsobj.typestate(SettingsData.state);
+    // // // Settingsobj.typecity(SettingsData.city);
+    // // Settingsobj.typeStreet(SettingsData.Street);
+    // // Settingsobj.typezipcode(SettingsData.zipcode);
+    // // Settingsobj.clickonSubmitbtn();
+    // Settingsobj.Cancel_btn();
+
+    // // Organization Page -------------------------------------------------
+    // Settingsobj.Organization_tab();
+    // Settingsobj.EditOrg_btn();
+    // Settingsobj.ClickonRegistered_Country();
+    // Settingsobj.ClickonVendor_Type();
+    // Settingsobj.ClickonCompany_Type();
+    // Settingsobj.ClickonAuthorized_Capital();
+    // Settingsobj.ClickonEstablished_Date();
+    // // Settingsobj.ClickonUsername();
+    // // Settingsobj.ClickonPassword();
+    // // Settingsobj.ClickonConfirm_Password();
+    // Settingsobj.ClickonCompany_Name();
+    // Settingsobj.ClickonWebsite();
+    // Settingsobj.ClickonPhone_Number();
+    // Settingsobj.ClickonMobile_Number();
+    // Settingsobj.ClickonAddress_Line1();
+    // Settingsobj.ClickonAddress_Line2();
+    // Settingsobj.ClickonState();
+    // Settingsobj.ClickonCity();
+    // Settingsobj.ClickonPostal_Code();
+    // Settingsobj.nextbtn1();
+
+    // Settingsobj.EnterRegistered_Country(SettingsData.Registeredcountry);
+    // Settingsobj.EnterVendor_Type(SettingsData.vendorType);
+    // Settingsobj.EnterCompany_Type(SettingsData.companyType);
+    // Settingsobj.EnterAuthorized_Capital(SettingsData.capital);
+    // Settingsobj.EnterEstablished_Date(SettingsData.Date);
+    // Settingsobj.EnterCompany_Name(SettingsData.companyname1);
+    // Settingsobj.EnterWebsite(SettingsData.website);
+    // Settingsobj.EnterPhone_Number(SettingsData.phonenumber1);
+    // Settingsobj.EnterMobile_Number(SettingsData.mobilenumber1);
+    // Settingsobj.EnterAddress_Line1(SettingsData.addr1);
+    // Settingsobj.EnterAddress_Line2(SettingsData.addr2);
+    // // Settingsobj.EnterState(SettingsData.orgstate);
+    // // Settingsobj.EnterCity(SettingsData.orgcity);
+    // Settingsobj.EnterPostal_Code(SettingsData.postalcode);
+    // Settingsobj.clickonSavechanges_btn();
+
+    // Password Tab -----------------------------------
+    Settingsobj.ClickonPassword_Tab();
+    Settingsobj.ChangePassbtn();
+    cy.wait(3000);
+    Settingsobj.CancelPass_btn();
+    cy.wait(3000);
+    Settingsobj.ChangePassbtn();
+    Settingsobj.SubmitPass_btn();
+    Settingsobj.enterPassword(SettingsData.Passwd);
+    Settingsobj.enterConfirmPass(SettingsData.ConPasswd);
+    cy.wait(3000);
+    Settingsobj.SubmitPass_btn();
+  });
+
+  it("Logout Page", () => {
+    Logoutobj.clickonDashboard();
+    Logoutobj.ClickonLogout();
+    cy.wait(3000);
+    Logoutobj.Cancel_logbtn();
+    Logoutobj.ClickonLogout();
+    cy.wait(3000);
+    Logoutobj.Logout_btn();
+  });
+
+  it("Dashboard Page", () => {
+    Dashboardobj.clickonDashboard();
+    Dashboardobj.Viewnewjobsbtn();
   });
 });

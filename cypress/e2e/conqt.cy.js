@@ -113,74 +113,75 @@ describe(" Vendor Registration", () => {
     registerobj.ClickonPostal_Code(registerData.postalcode);
   });
 
-  it("setting-Profile- all fields empty", () => {
+  it.only("setting-Profile- all fields empty", () => {
+    settingsobj.clickonDashboard();
     settingsobj.clickonAdministrator();
     settingsobj.clickonSettings();
     settingsobj.clickonProfile();
-    settingsobj.clickonEditbtn();
-    settingsobj.enterfirstname();
-    settingsobj.enterlastname();
-    settingsobj.enterprofile();
-    settingsobj.enterposition();
-    // settingsobj.enteremail();
-    settingsobj.enterphone();
-    settingsobj.entermobile();
-    settingsobj.enterdepartment();
-    // settingsobj.entercountry(settingsData.country);
-    // settingsobj.enterstate();
-    // settingsobj.entercity();
-    settingsobj.enterstreet();
-    settingsobj.enterzipcode();
+    // settingsobj.clickonEditbtn();
+    // settingsobj.enterfirstname();
+    // settingsobj.enterlastname();
+    // settingsobj.enterprofile();
+    // settingsobj.enterposition();
+    // // settingsobj.enteremail();
+    // settingsobj.enterphone();
+    // settingsobj.entermobile();
+    // settingsobj.enterdepartment();
+    // // settingsobj.entercountry(settingsData.country);
+    // // settingsobj.enterstate();
+    // // settingsobj.entercity();
+    // settingsobj.enterstreet();
+    // settingsobj.enterzipcode();
 
-    settingsobj.clickonSubmitbtn();
+    // settingsobj.clickonSubmitbtn();
 
     // filling all data
-    settingsobj.clickonEditbtn();
-    settingsobj.typefirstname(settingsData.firstname);
-    settingsobj.typelastname(settingsData.lastname);
-    settingsobj.typeprofile(settingsData.profile);
-    settingsobj.typeposition(settingsData.Position);
-    settingsobj.typephone(settingsData.phone);
-    settingsobj.typemobile(settingsData.mobile);
-    settingsobj.typedepartment(settingsData.department);
-    settingsobj.typecountry(settingsData.country);
-    settingsobj.typestate(settingsData.state);
-    settingsobj.typecity(settingsData.city);
-    settingsobj.typeStreet(settingsData.Street);
-    settingsobj.typezipcode(settingsData.zipcode);
-    settingsobj.clickonSubmitbtn();
+    // settingsobj.clickonEditbtn();
+    // settingsobj.typefirstname(settingsData.firstname);
+    // settingsobj.typelastname(settingsData.lastname);
+    // settingsobj.typeprofile(settingsData.profile);
+    // settingsobj.typeposition(settingsData.Position);
+    // settingsobj.typephone(settingsData.phone);
+    // settingsobj.typemobile(settingsData.mobile);
+    // settingsobj.typedepartment(settingsData.department);
+    // settingsobj.typecountry(settingsData.country);
+    // settingsobj.typestate(settingsData.state);
+    // settingsobj.typecity(settingsData.city);
+    // settingsobj.typeStreet(settingsData.Street);
+    // settingsobj.typezipcode(settingsData.zipcode);
+    // settingsobj.clickonSubmitbtn();
 
     //Organization tab
-    settingsobj.clickonOrganizationtab();
-    settingsobj.clickoneditbtnorg();
-    settingsobj.clearcompanyname();
-    settingsobj.clearaddressline1();
-    settingsobj.clearzipcode();
-    settingsobj.clearcurrency();
-    settingsobj.clearcurrencycode();
+    // settingsobj.clickonOrganizationtab();
+    // settingsobj.clickoneditbtnorg();
+    // settingsobj.clearcompanyname();
+    // settingsobj.clearaddressline1();
+    // settingsobj.clearzipcode();
+    // settingsobj.clearcurrency();
+    // settingsobj.clearcurrencycode();
     // settingsobj.clearphonenumber();
-    settingsobj.clearwebsite();
-    settingsobj.cleartaxgstno();
-    settingsobj.clearregisterationno();
-    settingsobj.clearpanno();
-    settingsobj.cleartanno();
+    // settingsobj.clearwebsite();
+    // settingsobj.cleartaxgstno();
+    // settingsobj.clearregisterationno();
+    // settingsobj.clearpanno();
+    // settingsobj.cleartanno();
 
-    settingsobj.clickonsavechangesbtn();
+    // settingsobj.clickonsavechangesbtn();
 
-    settingsobj.entercompanynameorg(settingsData.companyname_org);
-    settingsobj.enteraddressline1org(settingsData.addressline1_org);
-    settingsobj.entercityorg(settingsData.city_org);
-    settingsobj.enterzipcodeorg(settingsData.zipcode_org);
-    settingsobj.entercurrencyorg(settingsData.currency_org);
-    settingsobj.entercurrencycodeorg(settingsData.currencycode_org);
-    // settingsobj.enterphonenumberorg(settingsData.phonenumber_org);
-    settingsobj.enterwebsiteorg(settingsData.website_org);
-    settingsobj.entertax_gstnoorg(settingsData.tax_gstno_org);
-    settingsobj.enterregisterationnoorg(settingsData.registerationno_org);
-    settingsobj.enterpannoorg(settingsData.panno_org);
-    settingsobj.enterTannoorg(settingsData.Tanno_org);
+    // settingsobj.entercompanynameorg(settingsData.companyname_org);
+    // settingsobj.enteraddressline1org(settingsData.addressline1_org);
+    // settingsobj.entercityorg(settingsData.city_org);
+    // settingsobj.enterzipcodeorg(settingsData.zipcode_org);
+    // settingsobj.entercurrencyorg(settingsData.currency_org);
+    // settingsobj.entercurrencycodeorg(settingsData.currencycode_org);
+    // // settingsobj.enterphonenumberorg(settingsData.phonenumber_org);
+    // settingsobj.enterwebsiteorg(settingsData.website_org);
+    // settingsobj.entertax_gstnoorg(settingsData.tax_gstno_org);
+    // settingsobj.enterregisterationnoorg(settingsData.registerationno_org);
+    // settingsobj.enterpannoorg(settingsData.panno_org);
+    // settingsobj.enterTannoorg(settingsData.Tanno_org);
 
-    settingsobj.clickonsavechangesbtn();
+    // settingsobj.clickonsavechangesbtn();
 
     // billing/delivery
     // settingsobj.clickoneditbtnbil();
@@ -207,20 +208,33 @@ describe(" Vendor Registration", () => {
 
     // settingsobj.clickonsavechangesbtn();
 
-    settingsobj.clickonaddmoreaddressbtn_bil();
+    // settingsobj.clickonaddmoreaddressbtn_bil();
 
-    settingsobj.enterbillingcheckbox();
-    settingsobj.enterdeliverycheckbox();
-    settingsobj.enteraddressline1del(settingsData.addressline1_del);
-    settingsobj.enteraddressline2del(settingsData.addressline2_del);
-    settingsobj.entercountrydel(settingsData.country_del);
-    settingsobj.enterstatedel(settingsData.state_del);
-    settingsobj.entercitydel(settingsData.city_del);
-    settingsobj.enterzipcodedel(settingsData.zipcode_del);
-    settingsobj.entercontactpersondel(settingsData.contactperson_del);
-    settingsobj.enterphonenodel(settingsData.phonenumber_del);
+    // settingsobj.enterbillingcheckbox();
+    // settingsobj.enterdeliverycheckbox();
+    // settingsobj.enteraddressline1del(settingsData.addressline1_del);
+    // settingsobj.enteraddressline2del(settingsData.addressline2_del);
+    // settingsobj.entercountrydel(settingsData.country_del);
+    // settingsobj.enterstatedel(settingsData.state_del);
+    // settingsobj.entercitydel(settingsData.city_del);
+    // settingsobj.enterzipcodedel(settingsData.zipcode_del);
+    // settingsobj.entercontactpersondel(settingsData.contactperson_del);
+    // settingsobj.enterphonenodel(settingsData.phonenumber_del);
 
-    settingsobj.clickonsavechangesbtn();
+    // settingsobj.clickonsavechangesbtn();
+
+    // Password Tab -----------------------------------
+    settingsobj.ClickonPassword_Tab();
+    settingsobj.ChangePassbtn();
+    cy.wait(3000);
+    settingsobj.CancelPass_btn();
+    cy.wait(3000);
+    settingsobj.ChangePassbtn();
+    settingsobj.SubmitPass_btn();
+    settingsobj.enterPassword(settingsData.Passwd);
+    settingsobj.enterConfirmPass(settingsData.ConPasswd);
+    cy.wait(3000);
+    settingsobj.SubmitPass_btn();
   });
 
   it("category system", () => {
@@ -847,7 +861,7 @@ describe(" Vendor Registration", () => {
     Dashboardobj.OKbtn();
   });
 
-  it.only("Logout Page", () => {
+  it("Logout Page", () => {
     Logoutobj.clickonDashboard();
     Logoutobj.clickonToastmsg();
     Logoutobj.Logout();
